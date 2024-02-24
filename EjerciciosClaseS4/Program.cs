@@ -38,15 +38,43 @@
 //    Console.WriteLine($"La suma de numeros positivos es: {suma}");
 
 //2.2.
+//int n = 1;
 
-int n = 1;
+//while (true)
+//{
+//    if (n % 7 == 0 && n % 11 == 0)
+//    {
+//        Console.WriteLine($"El primer numero entero divisible entre 7 y 11 es: {n}");
+//        break;
+//    }
+//    n++;
+//}
+
+
+
+//ENUNCIADO 3
+
+//3.1.
+//String contra;
+
+//do
+//{
+//    Console.WriteLine("Ingrese la contraseña: ");
+//    contra = Console.ReadLine();
+//} while (contra!="jutiapa");
+
+//Console.WriteLine("Contraseña correcta.");
+
+
+//3.2.
+Random random = new Random();
+int numAleatorio = random.Next(1, 101);
+int num;
 
 do
 {
-    if (n % 7 == 0 && n % 11 == 0)
-    {
-        Console.WriteLine($"El primer numero entero divisible entre 7 y 11 es: {n}");
-    }
-    n++;
-} while (n%7==0&&n%11==0);
+    Console.WriteLine("Ingrese un numero: ");
+    num = Convert.ToInt32(Console.ReadLine());
+} while (num != numAleatorio);
 
+Console.WriteLine("Ha adivinado el número.");
